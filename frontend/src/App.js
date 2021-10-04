@@ -1,37 +1,15 @@
-import React from 'react';
-import NavBars from './component/Nav/Nav';
-import Content from './component/Header/Header';
-// import navElements from './component/Nav/navElements';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-  
-// } from "react-router-dom";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComp from './Components/Nav';
 
-
-function App () {
+function App() {
   return (
-    <>
-      <div>
-       <NavBars />
-       
-      </div> 
-      <div className="header">
+    <div className="App">
+      
+      <NavbarComp/>
 
-        <Content />
-
-      </div>
-
-      <div>
-     
-      </div>
-    </>
-
-   
+    </div>
   );
-
-
-
 }
+
 export default App;
