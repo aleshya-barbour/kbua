@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import {Navbar,Nav} from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,6 +10,8 @@ import {
 import Home from './Home';
 import Contact from './Contact.js';
 import About from './About'
+
+
 
 export default class NavbarComp extends Component {
     render() {
