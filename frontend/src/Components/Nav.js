@@ -10,6 +10,7 @@ import {
 import Home from './Home';
 import Contact from './Contact.js';
 import About from './About'
+import { NavDropdown } from 'react-bootstrap';
 
 
 
@@ -28,10 +29,14 @@ export default class NavbarComp extends Component {
                                 style={{ maxHeight: '100px' }}
                                 navbarScroll
                             >
+                                
                                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
 
+                                <NavDropdown title="Social Media" id="basic-nav-dropdown">
+                                  <NavDropdown.Item as={Link} to="https://www.instagram.com/"> <AiOutlineInstagram /> </NavDropdown.Item>
+                                </NavDropdown>
                             </Nav>
 
                         </Navbar.Collapse>

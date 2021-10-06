@@ -1,20 +1,32 @@
+import { display } from '@mui/system';
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import ContactForm from '../Components/Contactpage/ContactForm';
-import Contacts from '../Components/Contactpage/contacts'
+
 
 
 
 
 const Contact = () => {
+    
     return (
         <div>
-            <h1>
-                Contact us
-            </h1>
+            <Container fluid>
+              <Row>
+                <Col>
+                  <h1>
+                    Contact us
+                  </h1>
+                </Col>
+              </Row>
+              <Row >
+                <Col  xs={9}>
+                  <ContactForm />
+                </Col>
+              </Row>
+
+            </Container>
             
-            <ContactForm />
-            <Contacts />
-         
         </div>
            
        
