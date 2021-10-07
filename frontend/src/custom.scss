@@ -1,2 +1,9 @@
-$body-bg: #000;
-@import '~bootstrap/scss/bootstrap.scss';
+/* make the customizations */
+$theme-colors: (
+        "info": #06b47a,
+        "danger": #3a4041
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";
+

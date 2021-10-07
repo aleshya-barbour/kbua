@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import { NavDropdown } from 'react-bootstrap';
 
 
 
@@ -31,15 +30,15 @@ export const ContactUs = () => {
   <Form ref={ form } onSubmit={sendEmail}>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
     <Form.Label>Name</Form.Label>
-    <Form.Control as="textarea" rows={1} />
+    <Form.Control as="textarea" rows={1} required/>
   </Form.Group>
   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="name@example.com" />
+    <Form.Control type="email" placeholder="name@example.com" required/>
   </Form.Group>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
     <Form.Label>Example textarea</Form.Label>
-    <Form.Control  name="message" as="textarea" rows={3} />
+    <Form.Control  name="message" as="textarea" rows={3} required/>
   </Form.Group>
   <Button type="submit"  variant="secondary">Send</Button>{''}
 </Form>

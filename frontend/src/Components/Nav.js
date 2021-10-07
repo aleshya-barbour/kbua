@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Navbar,Nav} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,7 +10,7 @@ import {
 import Home from './Home';
 import Contact from './Contact.js';
 import About from './About'
-import { NavDropdown } from 'react-bootstrap';
+import {AiOutlineInstagram} from 'react-icons/ai'
 
 
 
