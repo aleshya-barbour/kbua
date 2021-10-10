@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,7 +10,6 @@ import {
 import Home from './Home';
 import Contact from './Contact.js';
 import About from './About'
-import {AiOutlineInstagram} from 'react-icons/ai'
 
 
 
@@ -19,9 +18,15 @@ export default class NavbarComp extends Component {
         return (
             <Router>
                 <div>
-
-                    <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand href="#">Kbua</Navbar.Brand>
+                <style type="text/css">
+                {`
+                .navi {
+                   
+                }
+                `}
+            </style>
+                    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="navi" >
+                        <Navbar.Brand as={Link} to="/home">Kbua</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -34,9 +39,6 @@ export default class NavbarComp extends Component {
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
 
-                                <NavDropdown title="Social Media" id="basic-nav-dropdown">
-                                  <NavDropdown.Item as={Link} to="https://www.instagram.com/"> <AiOutlineInstagram /> </NavDropdown.Item>
-                                </NavDropdown>
                             </Nav>
 
                         </Navbar.Collapse>

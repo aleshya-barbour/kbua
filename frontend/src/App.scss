@@ -1,24 +1,34 @@
 @import "custom";
 
 
+
+
 .pictures {
   
-  background-color:#dbd2d2 ;
+  color:#ffffff ;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1546497974-b213c9efb599?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  padding: 120px;
+  text-align: center;
 }
 
-.Navbar{
-  color: #300303;
+Navbar {
+  color: #033021;
 }
 
 
-// span {
-//   &.dangerText {
-//     color: #dc3545;
-//   }
+.appIcon {
+  padding-bottom: 10px;
+}
 
-//   &.infoText {
-//     color: #17a2b8;
-//     font-weight: bold;
-//   }
-// }
+.homeicon {
+  padding-bottom: 10px;
+}
+
+.home picture {
+  padding-top: 10px,
+  padding-bottom 10px;
+  
+}
+
 
