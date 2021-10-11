@@ -21,7 +21,7 @@ const Home = () => {
 
               color: #1f0101;
               height: 7em;
-              background-image: url("https://images.unsplash.com/photo-1595236629937-aadaf7c1d99d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTY5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60");
+             
               font-family: 'Montserrat', sans-serif;
               
              
@@ -34,17 +34,32 @@ const Home = () => {
               padding: 250px;
             }
             .background {  
-              background-image: url ("https://images.unsplash.com/photo-1595236629937-aadaf7c1d99d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTY5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60");
+              background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60");
             }
 
             .shopus{
+            
               font-family: 'Passion One', cursive;
               padding: 100px;
+             
+              display: block;
+              width: 100%;
+           
               text-align: center;
               color: white;
-              background-image: url("https://images.unsplash.com/photo-1567359781514-3b964e2b04d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTE4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60");
+              background-image: url("https://images.unsplash.com/photo-1505484128222-46ced733ba01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjc3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
             }
- 
+            
+            .block2{
+              color:gray;
+              border-style: rounded;
+            }
+
+            .block1{
+              color:blue;
+             
+              
+            }
           
             `}
             </style>
@@ -94,26 +109,56 @@ const Home = () => {
                 <ImSun icon={ImSun} size = '4em'/>
                 <h4>Gut health</h4>
                 <h5> more health more gut for health most and more and better supreme top tier bestest</h5>
+              </Row>v
+            </Container>
+
+            <div className="empty" />
+          
+            </Container>
+
+            <div className="empty" />
+
+            <Container fluid className="justify-content-md-center">
+             
+              <Row >
+                <Col className="block1" >
+                  <Button className="shopus" variant="primary"> 
+                    <h1>Need to order?</h1>
+                    <p>Click</p>
+                  </Button>
+                </Col>
+                  
+                <Col className="block2" >
+                  <h1>Here is language to persuade your buyer into clicking the button that will lead the to the store</h1>
+                </Col>
+              </Row>
+            </Container>
+          
+            <div className="empty" />
+
+            <div className="empty" />
+
+            <Container fluid className="justify-content-md-center">
+             
+             <Row >
+
+               <Col className="block2" >
+                  <h1>Here is language to persuade your buyer into clicking the button that will lead the to the store</h1>
+                </Col>
+               
+                <Col ClassName="block1" >
+                  <Button className="shopus" variant="primary"> 
+                    <h1>Subscribe click now</h1>
+                    <p>To save</p>
+                  </Button>
+                </Col>
+             
+              
               </Row>
             </Container>
 
-            <div className="empty" />
-            </Container>
-            
-            <Button className="shopus" varient="primary" >
-              <Container fluid >
-                <Row className="justify-content-md-center">
-                  <Col>
-                  <h1>Need to order?</h1>
-                  <p>Click</p>
-                  </Col>
-                </Row>
-              </Container>
-            </Button>
-            <div className="empty" />
-
          
-          
+            <div className="empty" />
           
         </div>
     )

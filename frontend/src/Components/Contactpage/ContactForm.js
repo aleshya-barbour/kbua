@@ -31,6 +31,7 @@ export const ContactUs = () => {
 
   return (
 
+   
   <Form ref={ form } onSubmit={sendEmail}>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
     <Form.Label>Name</Form.Label>

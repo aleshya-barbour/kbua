@@ -23,7 +23,7 @@ const HomePages = () => {
   </style>
     
       <div className="homePicture">
-        <Carousel fade>
+        <Carousel >
           <Carousel.Item>
             <img
               className="d-block w-100"
